@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 *,
 *::before,
 *::after {
@@ -24,13 +24,13 @@ body {
 
 main {
   display: flex;
+  margin: 20px auto;
   flex-direction: column-reverse;
   width: 200px;
   background: #1b1938;
   border-radius: 5px 5px 5px 5px;
 }
-
-.image-container {
+main .image-container {
   border-radius: 5px 5px 0 0;
   position: relative;
   top: 0;
@@ -38,38 +38,33 @@ main {
   height: 140px;
   background: url("/images/image-header-mobile.jpg") no-repeat center/cover;
 }
-.image-container .image-color {
-  position: absolute;
-  top: 0;
-  left: 0;
+main .image-container .image-color {
   height: 100%;
   width: 100%;
   opacity: 0.6;
   border-radius: 5px 5px 0 0;
   background: #aa5cdb;
 }
-
-.content {
+main .content {
   display: flex;
   flex-direction: column;
   margin: 10px 20px;
   text-align: center;
 }
-.content h1 {
+main .content h1 {
   font-size: 17px;
   color: white;
   margin: 10px 0;
 }
-.content #insights {
+main .content #insights {
   color: #aa5cdb;
 }
-.content p {
+main .content p {
   font-size: 9px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
 }
-
-.list {
+main .content .list {
   display: flex;
   height: 120px;
   flex-direction: column;
@@ -78,90 +73,22 @@ main {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.list .list-entry {
+main .content .list .list-entry {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
 }
-.list .text {
+main .content .list .list-entry .text {
   color: white;
   font-size: 14px;
   font-weight: bold;
 }
-.list .subtext {
+main .content .list .list-entry .subtext {
   color: rgba(255, 255, 255, 0.6);
   font-size: 7px;
   font-family: "Lexend Deca", sans-serif;
   margin-top: 5px;
-}
-
-@media (min-width: 900px) {
-  body {
-    font-family: "Inter", sans-serif;
-  }
-
-  main {
-    flex-direction: row;
-    width: 60vw;
-  }
-
-  .image-container {
-    background: #aa5cdb url("/images/image-header-desktop.jpg") no-repeat center/cover;
-    border-radius: 0 5px 5px 0;
-    width: 100%;
-    height: initial;
-  }
-  .image-container .image-color {
-    border-radius: 0 5px 5px 0;
-  }
-
-  .content {
-    flex-direction: column;
-    margin: 30px 0 20px 20px;
-    text-align: left;
-  }
-  .content h1 {
-    font-size: 20px;
-    margin: 10px 20px;
-    padding-right: 60px;
-  }
-  .content p {
-    font-size: 12px;
-    margin: 10px 10px 10px 20px;
-    padding-right: 0px;
-  }
-  .content .list {
-    flex-direction: row;
-    width: 260px;
-    margin-left: 20px;
-    margin-top: 0;
-    margin-right: 60px;
-    margin-bottom: 0;
-    height: 60px;
-    margin-top: 10px;
-  }
-  .content .list .subtext {
-    font-size: 8px;
-  }
-}
-@media (min-width: 1100px) {
-  main {
-    width: 65vw;
-  }
-
-  .content h1 {
-    font-size: 24px;
-    margin-right: 50px;
-  }
-  .content p {
-    font-size: 15px;
-    padding-right: 0px;
-    margin-right: 40px;
-  }
-  .content .list {
-    width: 350px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
